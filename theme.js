@@ -10,7 +10,7 @@ export default {
   ...theme,
 
   transitionTimingFunction: 'cubic-bezier(.3,1,0,1)',
-  transitionDuration: '1s',
+  transitionDuration: '0s',
 
   css: {
     'li p': {
@@ -18,6 +18,15 @@ export default {
     },
     'ul': {
       paddingLeft: '1em'
+    },
+    'th': {
+      borderColor: 'rgba(255,255,255,0.1)'
+    },
+    'td': {
+      borderColor: 'rgba(255,255,255,0.1)',
+      fontSize: bodyText.fontSize,
+      lineHeight: bodyText.lineHeight,
+      paddingRight: '24px'
     }
   },
 
@@ -36,6 +45,11 @@ export default {
     color: '#fff',
     fontSize: '48px',
     lineHeight: '56px',
+    textAlign: 'left'
+  },
+  
+  h2: {
+    color: '#ccc',
     textAlign: 'left'
   },
   
